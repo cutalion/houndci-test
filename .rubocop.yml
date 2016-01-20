@@ -1,0 +1,297 @@
+AllCops:
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+  Exclude:
+    - 'bin/*'
+    - 'bower_components/**/*'
+    - 'db/**/*'
+    - 'node_modules/**/*'
+    - 'spec/rails_helper.rb'
+    - 'spec/spec_helper.rb'
+
+AccessorMethodName:
+  Enabled: true
+
+ActionFilter:
+  Enabled: false
+
+Alias:
+  Enabled: false
+
+ArrayJoin:
+  Enabled: false
+
+AsciiComments:
+  Enabled: false
+
+AsciiIdentifiers:
+  Enabled: false
+
+Attr:
+  Enabled: true
+
+BlockNesting:
+  Enabled: false
+
+CaseEquality:
+  Enabled: false
+
+CharacterLiteral:
+  Enabled: false
+
+ClassAndModuleChildren:
+  Enabled: true
+  EnforcedStyle: compact
+
+ClassLength:
+  Enabled: false
+
+ClassVars:
+  Enabled: false
+
+CollectionMethods:
+  PreferredMethods:
+    find: detect
+    reduce: inject
+    collect: map
+    find_all: select
+
+ColonMethodCall:
+  Enabled: true
+
+CommentAnnotation:
+  Enabled: false
+
+CyclomaticComplexity:
+  Enabled: true
+
+Delegate:
+  Enabled: false
+
+DeprecatedHashMethods:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+DotPosition:
+  EnforcedStyle: trailing
+
+DoubleNegation:
+  Enabled: false
+
+EachWithObject:
+  Enabled: false
+
+EmptyLiteral:
+  Enabled: false
+
+Encoding:
+  Enabled: false
+
+EvenOdd:
+  Enabled: false
+
+FileName:
+  Enabled: true
+
+FlipFlop:
+  Enabled: false
+
+FormatString:
+  Enabled: false
+
+GlobalVars:
+  Enabled: false
+
+GuardClause:
+  Enabled: true
+
+IfUnlessModifier:
+  Enabled: false
+
+IfWithSemicolon:
+  Enabled: false
+
+InlineComment:
+  Enabled: false
+
+Lambda:
+  Enabled: true
+
+LambdaCall:
+  Enabled: true
+
+LineEndConcatenation:
+  Enabled: true
+
+LineLength:
+  Max: 100
+  Exclude:
+    - 'config/**/*'
+
+MethodLength:
+  Enabled: false
+
+ModuleFunction:
+  Enabled: false
+
+NegatedIf:
+  Enabled: false
+
+NegatedWhile:
+  Enabled: false
+
+Next:
+  Enabled: false
+
+NilComparison:
+  Enabled: true
+
+Not:
+  Enabled: true
+
+NumericLiterals:
+  Enabled: false
+
+OneLineConditional:
+  Enabled: false
+
+OpMethod:
+  Enabled: false
+
+ParameterLists:
+  Enabled: false
+
+PercentLiteralDelimiters:
+  Enabled: false
+
+PerlBackrefs:
+  Enabled: false
+
+PredicateName:
+  NamePrefixBlacklist:
+    - is_
+  Exclude:
+    - app/serializers/**/*
+
+Proc:
+  Enabled: false
+
+RaiseArgs:
+  Enabled: false
+
+RegexpLiteral:
+  Enabled: false
+
+SelfAssignment:
+  Enabled: false
+
+SingleLineBlockParams:
+  Enabled: false
+
+SingleLineMethods:
+  Enabled: false
+
+SignalException:
+  Enabled: false
+
+SpecialGlobalVars:
+  Enabled: false
+
+StringLiterals:
+  EnforcedStyle: single_quotes
+  Exclude:
+    - 'config/**/*'
+
+Tab:
+  Enabled: true
+
+TrailingComma:
+  Enabled: true
+
+TrivialAccessors:
+  Enabled: false
+
+VariableInterpolation:
+  Enabled: false
+
+WhenThen:
+  Enabled: false
+
+WhileUntilModifier:
+  Enabled: false
+
+WordArray:
+  Enabled: false
+
+# Lint
+
+AmbiguousOperator:
+  Enabled: false
+
+AmbiguousRegexpLiteral:
+  Enabled: false
+
+AssignmentInCondition:
+  Enabled: false
+
+ConditionPosition:
+  Enabled: false
+
+DeprecatedClassMethods:
+  Enabled: false
+
+ElseLayout:
+  Enabled: false
+
+HandleExceptions:
+  Enabled: false
+
+InvalidCharacterLiteral:
+  Enabled: false
+
+LiteralInCondition:
+  Enabled: false
+
+LiteralInInterpolation:
+  Enabled: false
+
+Loop:
+  Enabled: false
+
+MethodCalledOnDoEndBlock:
+  Enabled: true
+
+ParenthesesAsGroupedExpression:
+  Enabled: false
+
+RequireParentheses:
+  Enabled: true
+
+UnderscorePrefixedVariableName:
+  Enabled: false
+
+Void:
+  Enabled: false
+
+ExtraSpacing:
+  Enabled: false
+
+MultilineBlockChain:
+  Enabled: true
+
+Style/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Style/SingleSpaceBeforeFirstArg:
+  Enabled: true
+  Exclude:
+    - spec/factories/*
+
+Metrics/AbcSize:
+  Max: 15
+  Enabled: true
+  Exclude:
+    - 'config/routes/*'
