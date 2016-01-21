@@ -1,0 +1,12 @@
+ruby:
+  enabled: true
+  config_file: .rubocop.yml
+coffee_script:
+  enabled: true
+  config_file: coffeelint.json
+scss:
+  config_file: scss_lint.yml
+  exclude:
+    - 'node_modules/**'
+    - 'bower_components/**'
+    - 'ui/tmp/**'
